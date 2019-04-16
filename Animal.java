@@ -19,6 +19,8 @@ public abstract class Animal
     private Location location;
     // The animal's sex, either male or female.
     protected String sex;
+    ////Area in which female animal looks for male predetor to breed
+    protected int BREED_SEARCH_RADIUS;
     //The likelihood of an animal being infected and containing the disease.
     protected static double DISEASE_PROBABILITY = 0.0001;
     //The likelihood of an animal to catch a disease from anoter animal.

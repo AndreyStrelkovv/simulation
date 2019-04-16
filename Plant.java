@@ -1,4 +1,5 @@
 import java.util.List;
+import java.util.Random;
 
 /**
  * Class representing shared characeristics of plants.
@@ -14,6 +15,12 @@ public abstract class Plant
     private Field field;
     // Plants location in the field.
     private Location location;
+    // Get random object fo further use.
+    protected static final Random rand = Randomizer.getRandom();
+    // instance variables - replace the example below with your own
+    protected int MAX_LITTER_SIZE;
+    //Likelihood of a plant reproducing.
+    protected double REPRODUCTION_PROBABILITY;
 
     /**
      * Create a new plant at location in field.

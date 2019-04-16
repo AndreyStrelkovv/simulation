@@ -15,8 +15,6 @@ public abstract class Prey extends Animal
     protected static final int CYCAD_FOOD_VALUE = 20;
     // number of steps a prey can go before it has to eat again if it has eaten a grass.
     protected static final int GRASS_FOOD_VALUE = 20;
-    //Area in which female prey looks for male prey to breed
-    protected static final int BREED_SEARCH_RADIUS = 3;
     // A shared random number generator to control breeding.
     protected static final Random rand = Randomizer.getRandom();
     // a list that will contain a list of all the animals created
@@ -32,6 +30,7 @@ public abstract class Prey extends Animal
     {
         // initialise instance variables
         super(field, location, sex);
+        BREED_SEARCH_RADIUS = 3;
     } 
     
     /**

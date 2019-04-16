@@ -20,8 +20,7 @@ public class Hyena extends Predator
     // The likelihood of a hyena breeding.
     private static final double BREEDING_PROBABILITY = 0.05;
     // The maximum number of births.
-    private static final int MAX_LITTER_SIZE = 1;
-    
+    private static final int MAX_LITTER_SIZE = 1;    
     // Individual characteristics (instance fields).
     // The hyena's age.
     private int age;

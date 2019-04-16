@@ -21,7 +21,7 @@ public abstract class Predator extends Animal
     // number of steps a predator can go before it has to eat again if it has eaten a buffalo.
     protected static final int BUFFALO_FOOD_VALUE = 30;
     //Area in which female predator looks for male predetor to breed
-    protected static final int BREED_SEARCH_RADIUS = 7;
+
     // A shared random number generator to control breeding.
     protected static final Random rand = Randomizer.getRandom();
 
@@ -35,7 +35,8 @@ public abstract class Predator extends Animal
     public Predator(Field field, Location location, String sex)
     {
         // initialise instance variables
-        super(field, location, sex);       
+        super(field, location, sex); 
+        BREED_SEARCH_RADIUS = 7;
     }
 
     /**

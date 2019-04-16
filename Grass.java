@@ -1,5 +1,4 @@
 import java.util.List;
-import java.util.Random;
 
 /**
  * A simple model of grass.
@@ -10,13 +9,6 @@ import java.util.Random;
  */
 public class Grass extends Plant 
 {
-    // instance variables - replace the example below with your own
-    private static final int MAX_LITTER_SIZE = 1;
-    // Get random object fo further use.
-    private static final Random rand = Randomizer.getRandom();
-    //Likelihood of a plant reproducing.
-    private static final double REPRODUCTION_PROBABILITY = 0.2;
-    
     /**
      * Constructor for objects of class Grass
      * @param field The field currently occupied.
@@ -25,6 +17,8 @@ public class Grass extends Plant
     public Grass(Field field, Location location)
     {
         super(field, location);
+        MAX_LITTER_SIZE = 1;
+        REPRODUCTION_PROBABILITY = 0.2;
     }
     
     /**
